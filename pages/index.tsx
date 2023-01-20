@@ -125,7 +125,7 @@ const Home: NextPage = () => {
           rel="noopener noreferrer"
         >
           <Github />
-          <p>Star on GitHub</p>
+          <p> </p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
           Generate your Move for tonight in seconds
