@@ -19,8 +19,8 @@ const handler = async (req: NextRequest): Promise<Response> => {
 
   const payload = {
     model: "text-davinci-003",
-    prompt,
-    temperature: 0.7,
+    prompt: "Help me find more companies like the one given:\n\nExample: Superfly, https://superf.ly/\nAnswer: Exhibition hub, https://www.exhibitionhub.com/\n\nExample: Ticketmaster, https://www.ticketmaster.com/\nanswer: StubHub, https://www.stubhub.com/\nLiveNation, https://www.livenation.com/\nAXS, https://www.axs.com/\n\nExample: JP Morgan, https://www.jpmorgan.com/global\nAnswer:\nBank of America, https://www.bankofamerica.com/\nCitigroup, https://www.citigroup.com/\nWells Fargo, https://www.wellsfargo.com/\nGoldman Sachs, https://www.goldmansachs.com/\n\nExample: Pullman Yards, https://www.pullmanyards.com/\nAnswer:\nThe Battery Atlanta, https://www.batteryatl.com/\nThe Interlock, https://www.theinterlockatl.com/\nThe Works at Chattahoochee, https://www.theworksatl.com/\nThe Works at Perimeter, https://www.theworksperimeter.com/\n\nExample:",,
+    temperature: 0,
     top_p: 1,
     frequency_penalty: 0,
     presence_penalty: 0,
