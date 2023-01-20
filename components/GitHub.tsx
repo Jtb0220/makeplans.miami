@@ -1,7 +1,7 @@
 export default function Github({ className }: { className?: string }) {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns="https://ibb.co/2k389pd"
       width="20"
       height="20"
       fill="currentColor"
