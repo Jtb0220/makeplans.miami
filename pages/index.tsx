@@ -112,7 +112,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Twitter Generator</title>
+        <title>Move Generator</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -128,9 +128,9 @@ const Home: NextPage = () => {
           <p>Star on GitHub</p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-          Generate your next Twitter bio in seconds
+          Generate your Move for tonight in seconds
         </h1>
-        <p className="text-slate-500 mt-5">18,167 bios generated so far.</p>
+        <p className="text-slate-500 mt-5">18,167 Moves generated so far.</p>
         <div className="max-w-xl">
           <div className="flex mt-10 items-center space-x-3">
             <Image
@@ -141,9 +141,9 @@ const Home: NextPage = () => {
               className="mb-5 sm:mb-0"
             />
             <p className="text-left font-medium">
-              Copy your current bio{" "}
+              Describe what you want to get into{" "}
               <span className="text-slate-500">
-                (or write a few sentences about yourself)
+                (go nuts we'll will figure it out for you)
               </span>
               .
             </p>
@@ -154,12 +154,12 @@ const Home: NextPage = () => {
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "Night out with friends in Miami"
+              "I want to drink tequila sodas and with my friends and be able to talk to each other"
             }
           />
           <div className="flex mb-5 items-center space-x-3">
             <Image src="/2-black.png" width={30} height={30} alt="1 icon" />
-            <p className="text-left font-medium">Select your vibe.</p>
+            <p className="text-left font-medium">Where at?.</p>
           </div>
           <div className="block">
             <DropDown vibe={vibe} setVibe={(newVibe) => setVibe(newVibe)} />
@@ -170,7 +170,7 @@ const Home: NextPage = () => {
               className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-full"
               onClick={(e) => generateBio(e)}
             >
-              Generate your bio &rarr;
+              Generate some Moves &rarr;
             </button>
           )}
           {loading && (
@@ -195,7 +195,7 @@ const Home: NextPage = () => {
                 <>
                   <div>
                     <h2 className="sm:text-4xl text-3xl font-bold text-slate-900 mx-auto">
-                      Your generated bios
+                      Your generated Moves - text them to your friends if you have any
                     </h2>
                   </div>
                   <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto">
@@ -208,7 +208,7 @@ const Home: NextPage = () => {
                             className="bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 transition cursor-copy border"
                             onClick={() => {
                               navigator.clipboard.writeText(generatedBio);
-                              toast("Bio copied to clipboard", {
+                              toast("Move copied to clipboard", {
                                 icon: "✂️",
                               });
                             }}
