@@ -14,15 +14,15 @@ import ResizablePanel from "../components/ResizablePanel";
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [bio, setBio] = useState("");
-  const [vibe, setVibe] = useState<"Professional" | "Casual" | "Funny">(
-    "Professional"
+  const [vibe, setVibe] = useState<"Restaurant" | "Club" | "Outdoors">(
+    "Restaurant"
   );
   const [generatedBios, setGeneratedBios] = useState<String>("");
 
   console.log("Streamed response: ", generatedBios);
 
   const prompt =
-    vibe === "Funny"
+    vibe === "Restaurant"
       ? `Generate 2 ideas for a night out with friends that you can do at a restaurant in Miami clearly labeled "1." and "2.". Make sure there is a specific restaurant location in there and it's written in a format as a text to friends. Make sure each generated idea is at max 20 words and base it on this context: ${bio}${
           bio.slice(-1) === "." ? "" : "."
         }`
