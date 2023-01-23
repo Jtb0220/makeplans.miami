@@ -22,10 +22,10 @@ const Home: NextPage = () => {
 
   const prompt =
     vibe === "Restaurant"
-      ? `Generate 2 ideas for a night out with friends that you can do at a restaurant in Miami clearly labeled "1." and "2.". Make sure there is a specific restaurant location in there with a url link the locations website and it's written in a format as a text to friends. Make sure each generated idea is at max 50 words and base it on this context: ${bio}${
+      ? `Generate 2 ideas for a night out with friends that you can do at a restaurant in Miami clearly labeled "1." and "2.". Make sure the idea is the cheapest possible option. Make sure there is a specific restaurant location in there with a url link the locations website and it's written in a format as a text to friends. Make sure each generated idea is at max 50 words and base it on this context: ${bio}${
           bio.slice(-1) === "." ? "" : "."
         }`
-      : `Generate 2 ideas for a night out with friends that you can do at a ${vibe} in Miami clearly labeled "1." and "2.". Make sure there is a specific ${vibe} location in Miami in there with a url link the locations website and it's written in a format as a text to friends. Make sure each generated idea is at least 14 words and at max 50 words and base them on this context: ${bio}${
+      : `Generate 2 ideas for a night out with friends that you can do at a ${vibe} in Miami clearly labeled "1." and "2.". Make sure there is a specific ${vibe} location in Miami in there with a url link the locations website and it's written in a format as a text to friends. Make sure the idea is the cheapest possible option. Make sure each generated idea is at least 14 words and at max 50 words and base them on this context: ${bio}${
           bio.slice(-1) === "." ? "" : "."
         }`;
 
