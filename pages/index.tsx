@@ -127,7 +127,7 @@ const Home: NextPage = () => {
           <p> </p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-          Find the cheapest spots for your plans in Miami
+          Find the best deals in Miami in seconds
         </h1>
         <p className="text-slate-500 mt-5">18,167 Plans generated so far.</p>
         <div className="max-w-xl">
