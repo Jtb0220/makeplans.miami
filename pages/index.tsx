@@ -127,7 +127,7 @@ const Home: NextPage = () => {
           <p> </p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-          Generate your plan for tonight in seconds
+          Find the cheapest spots for your plans in Miami
         </h1>
         <p className="text-slate-500 mt-5">18,167 Plans generated so far.</p>
         <div className="max-w-xl">
@@ -153,7 +153,7 @@ const Home: NextPage = () => {
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "I want tacos at and a nice view"
+              "I want tacos and a nice view"
             }
           />
           <div className="flex mb-5 items-center space-x-3">
