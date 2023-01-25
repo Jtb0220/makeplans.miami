@@ -111,7 +111,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex max-w-5xl mx-auto flex-col items-center justify-center py-2 min-h-screen">
       <Head>
-        <title>Move Generator</title>
+        <title>Cheap Plan Generator</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -127,9 +127,9 @@ const Home: NextPage = () => {
           <p> </p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-          Generate your Move for tonight in seconds
+          Generate your plan for tonight in seconds
         </h1>
-        <p className="text-slate-500 mt-5">18,167 Moves generated so far.</p>
+        <p className="text-slate-500 mt-5">18,167 Plans generated so far.</p>
         <div className="max-w-xl">
           <div className="flex mt-10 items-center space-x-3">
             <Image
@@ -140,9 +140,9 @@ const Home: NextPage = () => {
               className="mb-5 sm:mb-0"
             />
             <p className="text-left font-medium">
-              Describe what you want to get into{" "}
+              Describe what you want to do{" "}
               <span className="text-slate-500">
-                (go nuts we'll will figure it out for you)
+                (go nuts the ai will figure out the rest)
               </span>
               .
             </p>
@@ -153,7 +153,7 @@ const Home: NextPage = () => {
             rows={4}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "I want to drink tequila sodas and with my friends and be able to talk to each other"
+              "I want tacos at and a nice view"
             }
           />
           <div className="flex mb-5 items-center space-x-3">
@@ -194,7 +194,7 @@ const Home: NextPage = () => {
                 <>
                   <div>
                     <h2 className="sm:text-4xl text-3xl font-bold text-slate-900 mx-auto">
-                      Your generated Moves - text them to your friends if you have any
+                      Your generated plans - text them to your friends!
                     </h2>
                   </div>
                   <div className="space-y-8 flex flex-col items-center justify-center max-w-xl mx-auto">
@@ -207,7 +207,7 @@ const Home: NextPage = () => {
                             className="bg-white rounded-xl shadow-md p-4 hover:bg-gray-100 transition cursor-copy border"
                             onClick={() => {
                               navigator.clipboard.writeText(generatedBio);
-                              toast("Move copied to clipboard", {
+                              toast("Plans copied to clipboard", {
                                 icon: "✂️",
                               });
                             }}
