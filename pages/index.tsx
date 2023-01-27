@@ -127,7 +127,7 @@ const Home: NextPage = () => {
           <p> </p>
         </a>
         <h1 className="sm:text-6xl text-4xl max-w-2xl font-bold text-slate-900">
-          Find the best deals in Miami in seconds
+          Don't know where to go tonight? We got you covered.
         </h1>
         <p className="text-slate-500 mt-5">18,167 Plans generated so far.</p>
         <div className="max-w-xl">
@@ -142,7 +142,7 @@ const Home: NextPage = () => {
             <p className="text-left font-medium">
               Where are you and what do you want to do{" "}
               <span className="text-slate-500">
-                (we will find the cheapest place!)
+                (no rules, write anything!)
               </span>
               .
             </p>
