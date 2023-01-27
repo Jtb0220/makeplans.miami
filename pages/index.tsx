@@ -22,10 +22,10 @@ const Home: NextPage = () => {
 
   const prompt =
     vibe === "Restaurant"
-      ? `Generate 2 ideas for a night out with friends that you can do at a restaurant in Miami clearly labeled "1." and "2.". Make sure the idea is the cheapest possible option. Make sure there is a specific restaurant location in there. Make sure to include the price of the lowest priced food and drink option.  and it's written in a format as a text to friends. Make sure each generated idea is at max 50 words and base it on this context: ${bio}${
+      ? `Generate 2 ideas for a night out with friends that you can do at a restaurant clearly labeled "1." and "2.". Make sure the idea is the cheapest possible option. Make sure there is a specific restaurant location in there that is located in the city decribed in: ${bio}$. Make sure to include the price of the lowest priced food and drink option.  and it's written in a format as a text to friends. Make sure each generated idea is at max 50 words and base it on this context: ${bio}${
           bio.slice(-1) === "." ? "" : "."
         }`
-      : `Generate 2 ideas for a night out with friends that you can do at a ${vibe} in Miami clearly labeled "1." and "2.". Make sure there is a specific ${vibe} location in Miami in there. Make sure the idea is the cheapest possible option. Make sure there is a specific restaurant location in there. Make sure to include the price of the lowest priced food and drink option. make sure it's written in a format as a text to friends. Make sure the idea is the cheapest possible option. Make sure each generated idea is at least 14 words and at max 50 words and base them on this context: ${bio}${
+      : `Generate 2 ideas for a night out with friends that you can do at a ${vibe} location clearly labeled "1." and "2.". Make sure there is a specific ${vibe} location in there that is located in the city decribed in: ${bio}$. Make sure the idea is the cheapest possible option. Make sure to include the price of the lowest priced options at that location. make sure it's written in a format as a text to friends. Make sure each generated idea is at least 14 words and at max 50 words and base the it on this context: ${bio}${
           bio.slice(-1) === "." ? "" : "."
         }`;
 
@@ -140,9 +140,9 @@ const Home: NextPage = () => {
               className="mb-5 sm:mb-0"
             />
             <p className="text-left font-medium">
-              Describe what you want to do{" "}
+              Where are you and what do you want to do{" "}
               <span className="text-slate-500">
-                (go nuts the ai will figure out the rest)
+                (we will find the cheapest place!)
               </span>
               .
             </p>
@@ -150,20 +150,12 @@ const Home: NextPage = () => {
           <textarea
             value={bio}
             onChange={(e) => setBio(e.target.value)}
-            rows={4}
+            rows={2}
             className="w-full rounded-md border-gray-300 shadow-sm focus:border-black focus:ring-black my-5"
             placeholder={
-              "I want tacos and a nice view"
+              "Get drinks in Buffalo, New York"
             }
           />
-          <div className="flex mb-5 items-center space-x-3">
-            <Image src="/2-black.png" width={30} height={30} alt="1 icon" />
-            <p className="text-left font-medium">Where at?</p>
-          </div>
-          <div className="block">
-            <DropDown vibe={vibe} setVibe={(newVibe) => setVibe(newVibe)} />
-          </div>
-          
           <div className="flex mb-5 items-center space-x-3">
             <Image src="/2-black.png" width={30} height={30} alt="1 icon" />
             <p className="text-left font-medium">Where at?</p>
