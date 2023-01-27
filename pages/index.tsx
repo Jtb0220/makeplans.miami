@@ -163,7 +163,14 @@ const Home: NextPage = () => {
           <div className="block">
             <DropDown vibe={vibe} setVibe={(newVibe) => setVibe(newVibe)} />
           </div>
-
+          <div className="flex mb-5 items-center space-x-3">
+            <Image src="/2-black.png" width={30} height={30} alt="1 icon" />
+            <p className="text-left font-medium">Where at?</p>
+          </div>
+          <div className="block">
+            <DropDown vibe={vibe} setVibe={(newVibe) => setVibe(newVibe)} />
+          </div>
+          
           {!loading && (
             <button
               className="bg-black rounded-xl text-white font-medium px-4 py-2 sm:mt-10 mt-8 hover:bg-black/80 w-full"
